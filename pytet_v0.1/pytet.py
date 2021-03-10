@@ -1,4 +1,5 @@
 from matrix import *
+import random
 
 def draw_matrix(m):
     array = m.get_array()
@@ -16,7 +17,13 @@ def draw_matrix(m):
 ###
 ### initialize variables
 ###     
-arrayBlk = [ [ 0, 0, 1, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 1, 0 ] ]
+arrayBlk = [[ [ 0, 0, 1, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 1, 0 ] ],
+            [ [ 0, 0, 1, 0 ], [ 0, 0, 1, 0 ], [ 0, 1, 1, 0 ], [ 0, 0, 0, 0 ] ],
+            [ [ 0, 1, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 1, 1, 0 ], [ 0, 0, 0, 0 ] ],
+            [ [ 0, 1, 1, 0 ], [ 0, 1, 1, 0 ], [ 0, 0, 0, 0 ], [ 0, 0, 0, 0 ] ],
+            [ [ 0, 0, 1, 1 ], [ 0, 1, 1, 0 ], [ 0, 0, 0, 0 ], [ 0, 0, 0, 0 ] ],
+            [ [ 0, 1, 1, 1 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 0 ], [ 0, 0, 0, 0 ] ],
+            [ [ 0, 1, 1, 0 ], [ 0, 0, 1, 1 ], [ 0, 0, 0, 0 ], [ 0, 0, 0, 0 ] ]]
 
 ### integer variables: must always be integer!
 iScreenDy = 15
@@ -53,7 +60,7 @@ arrayScreen = [
 ###  
 iScreen = Matrix(arrayScreen)
 oScreen = Matrix(iScreen)
-currBlk = Matrix(arrayBlk)
+currBlk = Matrix(arrayBlk[random.randint(0,6)])
 tempBlk = iScreen.clip(top, left, top+currBlk.get_dy(), left+currBlk.get_dx())
 tempBlk = tempBlk + currBlk
 oScreen.paste(tempBlk, top, left)
@@ -75,11 +82,12 @@ while True:
     elif key == 's': # move down
         top += 1
     elif key == 'w': # rotate the block clockwise
-        print('Not implemented')
-        continue
+        currBlk = Matrix.rotate_clock(currBlk)
     elif key == ' ': # drop the block
-        print('Not implemented')
-        continue
+        while not tempBlk.anyGreaterThan(1):
+            top += 1
+            tempBlk = iScreen.clip(top, left, top+currBlk.get_dy(), left+currBlk.get_dx())
+            tempBlk = tempBlk + currBlk
     else:
         print('Wrong key!!!')
         continue
@@ -95,9 +103,13 @@ while True:
             top -= 1
             newBlockNeeded = True
         elif key == 'w': # undo: rotate the block counter-clockwise
-            print('Not implemented')
+            currBlk = Matrix.rotate_counter_clock(currBlk)
         elif key == ' ': # undo: move up
-            print('Not implemented')
+            while tempBlk.anyGreaterThan(1):
+                top -= 1
+                tempBlk = iScreen.clip(top, left, top+currBlk.get_dy(), left+currBlk.get_dx())
+                tempBlk = tempBlk + currBlk
+            newBlockNeeded = True
 
         tempBlk = iScreen.clip(top, left, top+currBlk.get_dy(), left+currBlk.get_dx())
         tempBlk = tempBlk + currBlk
@@ -111,7 +123,7 @@ while True:
         top = 0
         left = iScreenDw + iScreenDx//2 - 2
         newBlockNeeded = False
-        currBlk = Matrix(arrayBlk)
+        currBlk = Matrix(arrayBlk[random.randint(0,6)])
         tempBlk = iScreen.clip(top, left, top+currBlk.get_dy(), left+currBlk.get_dx())
         tempBlk = tempBlk + currBlk
         if tempBlk.anyGreaterThan(1):

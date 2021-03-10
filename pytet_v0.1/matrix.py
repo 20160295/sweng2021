@@ -116,4 +116,21 @@ class Matrix:
         return False
 
 
+    # rotate block
+    def rotate_clock(m):
+        array = m.get_array()
+        temp_array = [[0]*m.get_dx() for k in range(m.get_dy())]
+        for y in range(m.get_dy()):
+            for x in range(m.get_dx()):
+                temp_array[x][m.get_dy()-1-y] = array[y][x]
+        temp_array = Matrix(temp_array)
+        return temp_array
 
+    def rotate_counter_clock(m):
+        array = m.get_array()
+        temp_array = [[0]*m.get_dx() for k in range(m.get_dy())]
+        for y in range(m.get_dy()):
+            for x in range(m.get_dx()):
+                temp_array[m.get_dx()-1-x][y] = array[y][x]
+        temp_array = Matrix(temp_array)
+        return temp_array
