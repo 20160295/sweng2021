@@ -11,10 +11,12 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
+:q
+|2,0,1615526180,,"q"
+:w mypytet.py
+|2,0,1615526178,,"w mypytet.py"
 :wq
 |2,0,1615389916,,"wq"
-:q
-|2,0,1615389089,,"q"
 
 # Search String History (newest to oldest):
 
@@ -65,35 +67,47 @@
 
 # File marks:
 '0  90  11  ~/pytet_v0.1/pytet.py
-|4,48,90,11,1615389916,"~/pytet_v0.1/pytet.py"
-'1  136  7  ~/pytet_v0.1/matrix.py
-|4,49,136,7,1615389287,"~/pytet_v0.1/matrix.py"
-'2  131  28  ~/pytet_v0.1/matrix.py
-|4,50,131,28,1615389089,"~/pytet_v0.1/matrix.py"
+|4,48,90,11,1615526180,"~/pytet_v0.1/pytet.py"
+'1  90  11  ~/pytet_v0.1/pytet.py
+|4,49,90,11,1615389916,"~/pytet_v0.1/pytet.py"
+'2  136  7  ~/pytet_v0.1/matrix.py
+|4,50,136,7,1615389287,"~/pytet_v0.1/matrix.py"
 '3  131  28  ~/pytet_v0.1/matrix.py
 |4,51,131,28,1615389089,"~/pytet_v0.1/matrix.py"
-'4  106  16  ~/pytet_v0.1/pytet.py
-|4,52,106,16,1615388881,"~/pytet_v0.1/pytet.py"
-'5  103  16  ~/pytet_v0.1/pytet.py
-|4,53,103,16,1615388881,"~/pytet_v0.1/pytet.py"
-'6  134  28  ~/pytet_v0.1/matrix.py
-|4,54,134,28,1615388854,"~/pytet_v0.1/matrix.py"
-'7  134  28  ~/pytet_v0.1/matrix.py
-|4,55,134,28,1615388854,"~/pytet_v0.1/matrix.py"
-'8  134  28  ~/pytet_v0.1/matrix.py
-|4,56,134,28,1615388854,"~/pytet_v0.1/matrix.py"
+'4  131  28  ~/pytet_v0.1/matrix.py
+|4,52,131,28,1615389089,"~/pytet_v0.1/matrix.py"
+'5  106  16  ~/pytet_v0.1/pytet.py
+|4,53,106,16,1615388881,"~/pytet_v0.1/pytet.py"
+'6  103  16  ~/pytet_v0.1/pytet.py
+|4,54,103,16,1615388881,"~/pytet_v0.1/pytet.py"
+'7  106  16  ~/pytet_v0.1/pytet.py
+|4,55,106,16,1615388881,"~/pytet_v0.1/pytet.py"
+'8  103  16  ~/pytet_v0.1/pytet.py
+|4,56,103,16,1615388881,"~/pytet_v0.1/pytet.py"
 '9  134  28  ~/pytet_v0.1/matrix.py
 |4,57,134,28,1615388854,"~/pytet_v0.1/matrix.py"
 
 # Jumplist (newest first):
 -'  90  11  ~/pytet_v0.1/pytet.py
+|4,39,90,11,1615526180,"~/pytet_v0.1/pytet.py"
+-'  90  11  ~/pytet_v0.1/pytet.py
 |4,39,90,11,1615389916,"~/pytet_v0.1/pytet.py"
+-'  106  16  ~/pytet_v0.1/pytet.py
+|4,39,106,16,1615389816,"~/pytet_v0.1/pytet.py"
 -'  106  16  ~/pytet_v0.1/pytet.py
 |4,39,106,16,1615389816,"~/pytet_v0.1/pytet.py"
 -'  136  7  ~/pytet_v0.1/matrix.py
 |4,39,136,7,1615389287,"~/pytet_v0.1/matrix.py"
 -'  136  7  ~/pytet_v0.1/matrix.py
 |4,39,136,7,1615389287,"~/pytet_v0.1/matrix.py"
+-'  136  7  ~/pytet_v0.1/matrix.py
+|4,39,136,7,1615389287,"~/pytet_v0.1/matrix.py"
+-'  136  7  ~/pytet_v0.1/matrix.py
+|4,39,136,7,1615389287,"~/pytet_v0.1/matrix.py"
+-'  119  0  ~/pytet_v0.1/matrix.py
+|4,39,119,0,1615389268,"~/pytet_v0.1/matrix.py"
+-'  119  0  ~/pytet_v0.1/matrix.py
+|4,39,119,0,1615389268,"~/pytet_v0.1/matrix.py"
 -'  119  0  ~/pytet_v0.1/matrix.py
 |4,39,119,0,1615389268,"~/pytet_v0.1/matrix.py"
 -'  119  0  ~/pytet_v0.1/matrix.py
@@ -102,6 +116,14 @@
 |4,39,131,28,1615389099,"~/pytet_v0.1/matrix.py"
 -'  131  28  ~/pytet_v0.1/matrix.py
 |4,39,131,28,1615389099,"~/pytet_v0.1/matrix.py"
+-'  131  28  ~/pytet_v0.1/matrix.py
+|4,39,131,28,1615389099,"~/pytet_v0.1/matrix.py"
+-'  131  28  ~/pytet_v0.1/matrix.py
+|4,39,131,28,1615389099,"~/pytet_v0.1/matrix.py"
+-'  131  28  ~/pytet_v0.1/matrix.py
+|4,39,131,28,1615389089,"~/pytet_v0.1/matrix.py"
+-'  131  28  ~/pytet_v0.1/matrix.py
+|4,39,131,28,1615389089,"~/pytet_v0.1/matrix.py"
 -'  131  28  ~/pytet_v0.1/matrix.py
 |4,39,131,28,1615389089,"~/pytet_v0.1/matrix.py"
 -'  131  28  ~/pytet_v0.1/matrix.py
@@ -114,6 +136,14 @@
 |4,39,134,28,1615388915,"~/pytet_v0.1/matrix.py"
 -'  134  28  ~/pytet_v0.1/matrix.py
 |4,39,134,28,1615388915,"~/pytet_v0.1/matrix.py"
+-'  134  28  ~/pytet_v0.1/matrix.py
+|4,39,134,28,1615388915,"~/pytet_v0.1/matrix.py"
+-'  134  28  ~/pytet_v0.1/matrix.py
+|4,39,134,28,1615388915,"~/pytet_v0.1/matrix.py"
+-'  134  28  ~/pytet_v0.1/matrix.py
+|4,39,134,28,1615388915,"~/pytet_v0.1/matrix.py"
+-'  134  28  ~/pytet_v0.1/matrix.py
+|4,39,134,28,1615388915,"~/pytet_v0.1/matrix.py"
 -'  103  16  ~/pytet_v0.1/pytet.py
 |4,39,103,16,1615388881,"~/pytet_v0.1/pytet.py"
 -'  103  16  ~/pytet_v0.1/pytet.py
@@ -122,6 +152,8 @@
 |4,39,103,16,1615388881,"~/pytet_v0.1/pytet.py"
 -'  103  16  ~/pytet_v0.1/pytet.py
 |4,39,103,16,1615388881,"~/pytet_v0.1/pytet.py"
+-'  103  16  ~/pytet_v0.1/pytet.py
+|4,39,103,16,1615388881,"~/pytet_v0.1/pytet.py"
 -'  11  23  ~/pytet_v0.1/pytet.py
 |4,39,11,23,1615388856,"~/pytet_v0.1/pytet.py"
 -'  11  23  ~/pytet_v0.1/pytet.py
@@ -132,6 +164,16 @@
 |4,39,11,23,1615388856,"~/pytet_v0.1/pytet.py"
 -'  11  23  ~/pytet_v0.1/pytet.py
 |4,39,11,23,1615388856,"~/pytet_v0.1/pytet.py"
+-'  11  23  ~/pytet_v0.1/pytet.py
+|4,39,11,23,1615388856,"~/pytet_v0.1/pytet.py"
+-'  134  28  ~/pytet_v0.1/matrix.py
+|4,39,134,28,1615388854,"~/pytet_v0.1/matrix.py"
+-'  134  28  ~/pytet_v0.1/matrix.py
+|4,39,134,28,1615388854,"~/pytet_v0.1/matrix.py"
+-'  134  28  ~/pytet_v0.1/matrix.py
+|4,39,134,28,1615388854,"~/pytet_v0.1/matrix.py"
+-'  134  28  ~/pytet_v0.1/matrix.py
+|4,39,134,28,1615388854,"~/pytet_v0.1/matrix.py"
 -'  134  28  ~/pytet_v0.1/matrix.py
 |4,39,134,28,1615388854,"~/pytet_v0.1/matrix.py"
 -'  134  28  ~/pytet_v0.1/matrix.py
@@ -152,6 +194,18 @@
 |4,39,136,28,1615388706,"~/pytet_v0.1/matrix.py"
 -'  136  28  ~/pytet_v0.1/matrix.py
 |4,39,136,28,1615388706,"~/pytet_v0.1/matrix.py"
+-'  136  28  ~/pytet_v0.1/matrix.py
+|4,39,136,28,1615388706,"~/pytet_v0.1/matrix.py"
+-'  136  28  ~/pytet_v0.1/matrix.py
+|4,39,136,28,1615388706,"~/pytet_v0.1/matrix.py"
+-'  136  28  ~/pytet_v0.1/matrix.py
+|4,39,136,28,1615388706,"~/pytet_v0.1/matrix.py"
+-'  136  28  ~/pytet_v0.1/matrix.py
+|4,39,136,28,1615388706,"~/pytet_v0.1/matrix.py"
+-'  136  28  ~/pytet_v0.1/matrix.py
+|4,39,136,28,1615388706,"~/pytet_v0.1/matrix.py"
+-'  136  28  ~/pytet_v0.1/matrix.py
+|4,39,136,28,1615388706,"~/pytet_v0.1/matrix.py"
 -'  11  23  ~/pytet_v0.1/pytet.py
 |4,39,11,23,1615388702,"~/pytet_v0.1/pytet.py"
 -'  11  23  ~/pytet_v0.1/pytet.py
@@ -168,6 +222,8 @@
 |4,39,11,23,1615388702,"~/pytet_v0.1/pytet.py"
 -'  11  23  ~/pytet_v0.1/pytet.py
 |4,39,11,23,1615388702,"~/pytet_v0.1/pytet.py"
+-'  63  46  ~/pytet_v0.1/pytet.py
+|4,39,63,46,1615388687,"~/pytet_v0.1/pytet.py"
 -'  63  46  ~/pytet_v0.1/pytet.py
 |4,39,63,46,1615388687,"~/pytet_v0.1/pytet.py"
 -'  63  46  ~/pytet_v0.1/pytet.py
@@ -232,65 +288,11 @@
 |4,39,26,78,1615388587,"~/pytet_v0.1/pytet.py"
 -'  26  78  ~/pytet_v0.1/pytet.py
 |4,39,26,78,1615388587,"~/pytet_v0.1/pytet.py"
--'  26  78  ~/pytet_v0.1/pytet.py
-|4,39,26,78,1615388587,"~/pytet_v0.1/pytet.py"
--'  26  78  ~/pytet_v0.1/pytet.py
-|4,39,26,78,1615388587,"~/pytet_v0.1/pytet.py"
--'  26  78  ~/pytet_v0.1/pytet.py
-|4,39,26,78,1615388587,"~/pytet_v0.1/pytet.py"
--'  26  78  ~/pytet_v0.1/pytet.py
-|4,39,26,78,1615388587,"~/pytet_v0.1/pytet.py"
--'  26  78  ~/pytet_v0.1/pytet.py
-|4,39,26,78,1615388587,"~/pytet_v0.1/pytet.py"
--'  26  78  ~/pytet_v0.1/pytet.py
-|4,39,26,78,1615388587,"~/pytet_v0.1/pytet.py"
--'  26  78  ~/pytet_v0.1/pytet.py
-|4,39,26,78,1615388587,"~/pytet_v0.1/pytet.py"
--'  26  78  ~/pytet_v0.1/pytet.py
-|4,39,26,78,1615388587,"~/pytet_v0.1/pytet.py"
--'  26  78  ~/pytet_v0.1/pytet.py
-|4,39,26,78,1615388587,"~/pytet_v0.1/pytet.py"
--'  26  78  ~/pytet_v0.1/pytet.py
-|4,39,26,78,1615388587,"~/pytet_v0.1/pytet.py"
--'  26  78  ~/pytet_v0.1/pytet.py
-|4,39,26,78,1615388570,"~/pytet_v0.1/pytet.py"
--'  26  78  ~/pytet_v0.1/pytet.py
-|4,39,26,78,1615388570,"~/pytet_v0.1/pytet.py"
--'  26  78  ~/pytet_v0.1/pytet.py
-|4,39,26,78,1615388570,"~/pytet_v0.1/pytet.py"
--'  26  78  ~/pytet_v0.1/pytet.py
-|4,39,26,78,1615388570,"~/pytet_v0.1/pytet.py"
--'  26  78  ~/pytet_v0.1/pytet.py
-|4,39,26,78,1615388570,"~/pytet_v0.1/pytet.py"
--'  26  78  ~/pytet_v0.1/pytet.py
-|4,39,26,78,1615388570,"~/pytet_v0.1/pytet.py"
--'  26  78  ~/pytet_v0.1/pytet.py
-|4,39,26,78,1615388570,"~/pytet_v0.1/pytet.py"
--'  26  78  ~/pytet_v0.1/pytet.py
-|4,39,26,78,1615388570,"~/pytet_v0.1/pytet.py"
--'  16  0  ~/pytet_v0.1/pytet.py
-|4,39,16,0,1615388559,"~/pytet_v0.1/pytet.py"
--'  27  0  ~/pytet_v0.1/pytet.py
-|4,39,27,0,1615388559,"~/pytet_v0.1/pytet.py"
--'  16  0  ~/pytet_v0.1/pytet.py
-|4,39,16,0,1615388559,"~/pytet_v0.1/pytet.py"
--'  27  0  ~/pytet_v0.1/pytet.py
-|4,39,27,0,1615388559,"~/pytet_v0.1/pytet.py"
--'  16  0  ~/pytet_v0.1/pytet.py
-|4,39,16,0,1615388559,"~/pytet_v0.1/pytet.py"
--'  27  0  ~/pytet_v0.1/pytet.py
-|4,39,27,0,1615388559,"~/pytet_v0.1/pytet.py"
--'  16  0  ~/pytet_v0.1/pytet.py
-|4,39,16,0,1615388559,"~/pytet_v0.1/pytet.py"
--'  27  0  ~/pytet_v0.1/pytet.py
-|4,39,27,0,1615388559,"~/pytet_v0.1/pytet.py"
--'  16  0  ~/pytet_v0.1/pytet.py
-|4,39,16,0,1615388559,"~/pytet_v0.1/pytet.py"
 
 # History of marks within files (newest to oldest):
 
 > ~/pytet_v0.1/pytet.py
-	*	1615389915	0
+	*	1615526178	0
 	"	90	11
 	^	90	12
 	.	90	12
