@@ -1,7 +1,6 @@
 from tetris import *
 
 class CTetris(Tetris):
-    blocks_position = 0
     @classmethod
     def init(cls, setOfBlockArrays):
         Tetris.nBlockTypes = len(setOfBlockArrays)
@@ -17,8 +16,6 @@ class CTetris(Tetris):
             for j in range(Tetris.nBlockDegrees):
                 Tetris.setOfBlockObjects[i][j] = Matrix(setOfBlockArrays[i][j])
                 Matrix.mulc(Tetris.setOfBlockObjects[i][j],i+1)
-                
-        CTetris.block_position = [[0] * Tetris.nBlockDegrees for _ in range(Tetris.nBlockTypes)]
                             
                 
         return
@@ -114,9 +111,11 @@ class CTetris(Tetris):
                     break
             if temp == 0:
                 full_line += [i]
-        for i in range(len(full_line)):
-            self.tempBlk = self.oScreen.clip(0, self.iScreenDw, full_line[i], self.iScreenDw+self.iScreenDx)
-            self.oScreen.paste(self.tempBlk, 1, self.iScreenDw)
+        if len(full_line) != 0:
+            for i in range(len(full_line)):
+                self.tempBlk = self.oScreen.clip(0, self.iScreenDw, full_line[i], self.iScreenDw+self.iScreenDx)
+                self.oScreen.paste(self.tempBlk, 1, self.iScreenDw)
+            self.oScreen.paste(Matrix([[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]), 0, self.iScreenDw)
         full_line = []
         
             
