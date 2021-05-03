@@ -1,39 +1,39 @@
 #pragma once
 #include "Matrix.h"
 #include <vector>
-#include <cmath>
-#include <string>
 
 enum TetrisState { Running, NewBlock, Finished };
 
 class Tetris {
-    public:
-        Matrix* oScreen;
-        Matrix* iScreen;
-        //Matrix* iScreen;
-        Matrix tempBlk;
-        Matrix currBlk;
-        static int iScreenDw;
-        static std::vector<Matrix> setofBlockObjects;
-        static int myMAX_BLK_DEGREES;
-        static int myMAX_BLK_TYPES;
-        TetrisState state;
-        int iScreenDx;
-        int iScreenDy;
-        int top;
-        int left;
-        int idxBlockType;
-        int idxBlockDegree;
-        int tempDegree;
-        int* arrayscreen;
-        bool juststarted;
+public:
+	static int nBlockTypes;
+	static int nBlockDegrees;
+	static vector<Matrix> setOfBlockObjects;
+	static int iScreenDw;
+	static int* arrayBlk_Size;
+	int* topline;
+	int iScreenDy;
+	int iScreenDx;
+	int idxBlockDegree;
+	int idxBlockType;
+	int* arrayScreen;
+	int top;
+	int left;
+	TetrisState state;
+	bool justStarted;
+	Matrix currBlk;
+	Matrix tempBlk;
+	Matrix* iScreen;
+	Matrix* oScreen;
 
-        Tetris();
-        ~Tetris();
-        Tetris(int dy, int dx);
-        static void init(int* setOfBlaockArrays[], int MAX_BLK_TYPES, int MAX_BLK_DEGREES);
-        TetrisState accept(int key);
-        int* createArrayscreen();
-        void deleteFullLines();
-        
+
+	Tetris();
+	Tetris(int dy, int dx);
+	~Tetris();
+	static void init(int** setOfBlockArrays, int max_blk_tpyes, int max_blk_degrees);
+	int* createArrayScreen();
+	TetrisState accept(char key);
+	void deleteFullLines();
+
+
 };

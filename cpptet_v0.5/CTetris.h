@@ -2,18 +2,20 @@
 #include "Tetris.h"
 
 class CTetris : public Tetris {
-    public:
-        static std::vector<Matrix> setofCBlockObjects;
-        Matrix* iCScreen;
-        Matrix* oCScreen;
-        Matrix currCBlk;
-        Matrix tempBlk;
-        int* arrayscreen;
-        
-        
-        CTetris(int cy, int cx);
-        ~CTetris();
-        static void init(int *setofBlockArrays[], int MAX_BLK_TYPES, int MAX_BLK_DEGREES);
-        TetrisState accept(int key);
-        void deleteFullLines();
+public:
+	static vector<Matrix> setOfCBlockObjects;
+	Matrix* iCScreen;
+	Matrix* oCScreen;
+	Matrix currCBlk;
+	Matrix tempBlk;
+
+public:
+	CTetris();
+	CTetris(int dy, int dx);
+	~CTetris();
+	static void init(int** setOfBlockArrays, int max_blk_tpyes, int max_blk_degrees);
+	TetrisState accept(char key);
+	void deleteFullLines();
+
+
 };

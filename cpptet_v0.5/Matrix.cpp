@@ -80,6 +80,7 @@ void Matrix::paste(const Matrix *obj, int top, int left) {
 	array[y + top][x + left] = obj->array[y][x];
       else {
 	cerr << "invalid matrix range";
+	return NULL;
       }
     }
 }
