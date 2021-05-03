@@ -22,9 +22,10 @@
 #define color_green "\033[32m"
 #define color_yellow "\033[33m"
 #define color_blue "\033[34m"
-#define color_magenta "\033[35m"
+#define color_purple "\033[35m"
 #define color_cyan "\033[36m"
-#define b_color_black "\033[40m"
+#define color_pink "\033[95m"
+#define b_color_black "\033[37m"
 
 using namespace std;
 
@@ -150,24 +151,24 @@ void drawScreen(CTetris *board)
   int **array = board->oCScreen->get_array();
   system("clear");
 
-  for (int y = 0; y < dy - dw + 1; y++) {
-    for (int x = dw - 1; x < dx - dw + 1; x++) {
+  for (int y = 0; y < dy - dw ; y++) {
+    for (int x = dw ; x < dx - dw ; x++) {
       if (array[y][x] == 0)
 	cout << color_black << "□ " << color_normal;
       else if (array[y][x] == 1)
-	cout << color_black << "■ " << color_normal;
+	cout << color_red << "■ " << color_normal;
       else if (array[y][x] == 2)
 	cout << color_green << "■ " << color_normal;
       else if (array[y][x] == 3)
-	cout << color_cyan << "■ " << color_normal;
+	cout << color_yellow << "■ " << color_normal;
       else if (array[y][x] == 4)
 	cout << color_blue << "■ " << color_normal;
       else if (array[y][x] == 5)
-	cout << color_yellow << "■ " << color_normal;
+	cout << color_purple << "■ " << color_normal;
       else if (array[y][x] == 6)
-	cout << color_red << "■ " << color_normal;
+	cout << color_cyan << "■ " << color_normal;
       else if (array[y][x] == 7)
-	cout << color_magenta << "■ " << color_normal;
+	cout << color_pink << "■ " << color_normal;
       else // array[y][x] == 1 // wall
 	cout << b_color_black << "■ " << color_normal;
     }
